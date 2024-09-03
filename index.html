@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+    <body>
+        <div class="curd">
+            <div class="head">
+                <h2>my Store</h2>
+                <p>E.shop management system</p>
+            </div>
+            <div class="inputs">
+                    <input type="text" name="" id="title" placeholder="title">
+                <div class="price">
+                    <input type="number" onkeyup="gettotal()" name="" id="price" placeholder="price">
+                    <input type="number" onkeyup="gettotal()"  name="" id="taxes" placeholder="taxets">
+                    <input type="number" onkeyup="gettotal()"  name="" id="ads" placeholder="ads">
+                    <input type="number" onkeyup="gettotal()"  name="" id="discount" placeholder="discount">
+                    <small id="total">123456</small>
+                </div>
+                <input type="number" name="" id="count" placeholder="count">
+                <input type="text" name="" id="category" placeholder="category">
+
+                <button id="submit">create</button>
+            </div>
+            <div class="outputs">
+                <div class="searchblock">
+                    <input type="text" onkeyup="searchdata(this.value)" name="" id="search" placeholder="search">
+                    <div class="btnsearch">
+                        <button onclick="getsearchmood(this.id)" id="searchtitle">search by title</button>
+                        <button onclick="getsearchmood(this.id)" id="searchcat">search by category</button>
+                    </div>
+                </div>
+                <div id="deleteall"></div>
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>adds</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    
+                    </tr>
+                    <tbody id="tbody">
+
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <P>
+               <span> Ahmed Hamad Inc ©.</span>
+            </P>
+            <nav>
+                    <a target="_blank" href="https://www.t.me/ahmedatiahamad"><i class="fa-solid fa-paper-plane"></i></a>
+                    <a target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.facebook.com#"><i class="fa-brands fa-discord"></i></a>
+                    <a target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-tiktok"></i></a>
+            </nav>
+           </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
